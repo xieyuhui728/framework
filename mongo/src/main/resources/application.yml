@@ -1,0 +1,31 @@
+
+#默认配置
+spring:
+  profiles:
+    active: @profileActive@
+
+debug: false
+
+server:
+  port: 8080
+
+---
+#dev环境
+spring:
+  profiles: dev
+# mongodb
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/avril
+
+---
+#test环境
+spring:
+  profiles: test
+
+---
+#prod环境
+spring:
+  profiles: prod
+
+
