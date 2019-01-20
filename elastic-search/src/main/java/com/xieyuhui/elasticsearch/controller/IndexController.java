@@ -1,4 +1,4 @@
-package com.xieyuhui.mongo.controller;
+package com.xieyuhui.elasticsearch.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Auther: xieyuhui
- * @Date: 2019-01-18 14:35
+ * @Date: 2019-01-20 10:51
  * @Description:
  */
 @RestController

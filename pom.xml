@@ -16,6 +16,7 @@
 
     <modules>
         <module>mongo</module>
+        <module>elastic-search</module>
     </modules>
 
     <properties>

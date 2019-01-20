@@ -12,7 +12,13 @@ table joins | /  | 表连接,MongoDB不支持
 primary key | primary key  | 主键,MongoDB自动将_id字段设置为主键
 
 ---
+### 资料
+[mongodb官网](https://www.mongodb.com/)  
+[mongodb中文社区](http://www.mongoing.com/)    
+[mongodb中文教程](http://www.runoob.com/mongodb/mongodb-tutorial.html)  
+[mac环境搭建mongodb](https://www.jianshu.com/p/ae906cebc056)
 
+---
 ###spring boot mongodb
 
 spring-data-mongodb中的实体映射是通过MongoMappingConverter这个类实现的。它可以通过注释把java类转换为mongodb的文档。

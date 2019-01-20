@@ -1,6 +1,6 @@
 project:
   appkey: framework-mongo
-  info: OMG,Mongo project runs successfully！
+  info: OMG,Elasticsearch project runs successfully！
 
 #默认配置
 spring:
@@ -16,10 +16,6 @@ server:
 #dev环境
 spring:
   profiles: dev
-# mongodb
-  data:
-    mongodb:
-      uri: mongodb://127.0.0.1:27017/avril
 
 ---
 #test环境

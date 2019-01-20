@@ -9,6 +9,8 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 /**
  * @Auther: xieyuhui
  * @Date: 2019-01-18 19:02
@@ -27,7 +29,8 @@ public class DemoDaoImpl implements DemoDao {
 
     @Override
     public void removeDemo(Long id) {
-        mongoTemplate.remove(id);
+        Query query = new Query(Criteria.where("id").is(id));
+        mongoTemplate.remove(query,DemoEntity.class);
     }
 
     @Override
@@ -46,4 +49,6 @@ public class DemoDaoImpl implements DemoDao {
         Query query = new Query(Criteria.where("id").is(id));
         return mongoTemplate.findOne(query,DemoEntity.class);
     }
+
+
 }
