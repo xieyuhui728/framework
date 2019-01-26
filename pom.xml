@@ -17,6 +17,8 @@
     <modules>
         <module>mongo</module>
         <module>elastic-search</module>
+        <module>jdk</module>
+        <module>spring</module>
     </modules>
 
     <properties>
