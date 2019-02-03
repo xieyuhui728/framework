@@ -6,3 +6,5 @@
 - spring
 - mongo
 - Elasticsearch
+- netty
+- mybatis

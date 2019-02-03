@@ -19,6 +19,8 @@
         <module>elastic-search</module>
         <module>jdk</module>
         <module>spring</module>
+        <module>mybatis</module>
+        <module>netty</module>
     </modules>
 
     <properties>
