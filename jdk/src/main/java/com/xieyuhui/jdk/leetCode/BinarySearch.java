@@ -1,9 +1,13 @@
-package com.xieyuhui.jdk.alg;
+package com.xieyuhui.jdk.leetCode;
 
 /**
  * @Auther: xieyuhui
  * @Date: 2019-02-19 18:04
- * @Description: 二分查找算法
+ * @Description: 二分查找算法:
+ * mid = (end-start/2) + start
+ * 取数组的mid下标值，查找的元素跟mid值比较。
+ * 如果比mid值小，则end下标向前移一位，
+ * 如果比mid值大，则start下标向后移一位。
  */
 public class BinarySearch {
 
@@ -30,8 +34,8 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
-        int key = 11;
+        int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+        int key = 5;
         int index = binSearch(array, key);
         System.out.println(index);
     }
