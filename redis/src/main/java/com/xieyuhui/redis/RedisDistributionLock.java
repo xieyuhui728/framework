@@ -1,12 +1,8 @@
 package com.xieyuhui.redis;
 
-import org.springframework.data.redis.core.RedisTemplate;
 import redis.clients.jedis.Jedis;
 
-import javax.annotation.Resource;
-import java.time.Instant;
 import java.util.Collections;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @Auther: xieyuhui
