@@ -44,7 +44,7 @@ public class Fibonacci {
                 arr[0] = 1;
                 arr[1] = 1;
                 for (int i = 2; i < n; i++) {
-                    //当前元素 = 前两项只和　
+                    //当前元素 = 前两项之和　
                     arr[i] = arr[i - 1] + arr[i - 2];
                 }
         }
