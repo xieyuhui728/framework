@@ -1,5 +1,7 @@
 package com.xieyuhui.jdk.leetCode;
 
+import com.xieyuhui.jdk.leetCode.common.ListNode;
+
 /**
  * @Auther: xieyuhui
  * @Date: 2019-02-25 16:39
@@ -20,35 +22,10 @@ public class ReverseList {
 
     }
 
-    class Node {
-        int index;
-        Node next;
 
-        public Node(int index, Node next) {
-            this.index = index;
-            this.next = next;
-        }
-
-        public int getIndex() {
-            return index;
-        }
-
-        public void setIndex(int index) {
-            this.index = index;
-        }
-
-        public Node getNext() {
-            return next;
-        }
-
-        public void setNext(Node next) {
-            this.next = next;
-        }
-    }
-
-    public static Node _reverseList(Node head) {
-        Node pre = null;
-        Node next = null;
+    public static ListNode solution(ListNode head) {
+        ListNode pre = null;
+        ListNode next = null;
         //循环至尾节点
         while (head != null) {
             //next一直保存当前节点的下个节点

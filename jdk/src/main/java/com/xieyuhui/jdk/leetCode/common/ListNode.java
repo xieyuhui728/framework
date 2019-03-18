@@ -3,11 +3,11 @@ package com.xieyuhui.jdk.leetCode.common;
 /**
  * @Auther: xieyuhui
  * @Date: 2019-03-05 17:38
- * @Description:
+ * @Description: 链表
  */
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     ListNode(int x) {
         val = x;
