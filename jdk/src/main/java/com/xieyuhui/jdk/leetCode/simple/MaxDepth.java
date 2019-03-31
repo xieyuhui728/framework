@@ -1,4 +1,4 @@
-package com.xieyuhui.jdk.leetCode;
+package com.xieyuhui.jdk.leetCode.simple;
 
 import com.xieyuhui.jdk.leetCode.common.TreeNode;
 

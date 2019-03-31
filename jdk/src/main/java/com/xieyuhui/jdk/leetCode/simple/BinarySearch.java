@@ -1,4 +1,4 @@
-package com.xieyuhui.jdk.leetCode;
+package com.xieyuhui.jdk.leetCode.simple;
 
 /**
  * @Auther: xieyuhui
