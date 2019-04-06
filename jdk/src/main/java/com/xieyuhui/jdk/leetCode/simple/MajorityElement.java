@@ -1,5 +1,9 @@
 package com.xieyuhui.jdk.leetCode.simple;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Auther: xieyuhui
  * @Date: 2019-03-31 13:51
@@ -11,10 +15,26 @@ package com.xieyuhui.jdk.leetCode.simple;
  */
 public class MajorityElement {
     public static void main(String[] args) {
-
+        int[] nums = {2, 2, 1, 1, 1, 2, 2};
+        int result = solution(nums);
+        System.out.println(result);
     }
 
     public static int solution(int[] nums) {
-        return 0;
+//        Arrays.sort(nums);
+//        return nums[nums.length / 2];
+        int count = 1;
+        int maj = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (maj == nums[i]) {
+                ++count;
+            } else {
+                --count;
+                if (count == 0) {
+                    maj = nums[i + 1];
+                }
+            }
+        }
+        return maj;
     }
 }

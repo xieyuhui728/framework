@@ -1,11 +1,11 @@
-package com.xieyuhui.jdk.leetCode.simple;
+package com.xieyuhui.jdk.leetCode.sort;
 
 import com.alibaba.fastjson.JSONObject;
 
 /**
  * @Auther: xieyuhui
  * @Date: 2019-02-24 20:30
- * @Description: 快速排序
+ * @Description: 交换排序:快速排序
  *  快速排序原理即是，选择数组中的一个元素作为基准值 pivot（通常使用第一个就行），
  *  然后遍历其他元素，将小于 pivot 的元素放置在左边，将大于 pivot 的元素放置在右边。
  *  可以得到两个子数组，再依次对子数组进行快速排序，最终完成排序。
