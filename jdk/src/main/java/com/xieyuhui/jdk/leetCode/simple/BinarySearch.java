@@ -4,7 +4,7 @@ package com.xieyuhui.jdk.leetCode.simple;
  * @Auther: xieyuhui
  * @Date: 2019-02-19 18:04
  * @Description: 二分查找算法:
- * mid = (end-start/2) + start
+ * mid = (end+start/2)
  * 取数组的mid下标值，查找的元素跟mid值比较。
  * 如果比mid值小，则end下标向前移一位，
  * 如果比mid值大，则start下标向后移一位。
@@ -17,15 +17,15 @@ public class BinarySearch {
      * @return 下标值
      */
     public static int binSearch(int[] array, int key) {
-        int start = 0;
-        int end = array.length - 1;
+        int low = 0;
+        int high = array.length - 1;
         int mid;
-        while (start <= end) {
-            mid = (end - start) / 2 + start;
-            if (key < array[mid]) {
-                end = mid - 1;
-            } else if (key > array[mid]) {
-                start = mid + 1;
+        while (low <= high) {
+            mid = (low + high) / 2;
+            if (array[mid] > key) {
+                high = mid - 1;
+            } else if (array[mid] < key) {
+                low = mid + 1;
             } else {
                 return mid;
             }
@@ -35,7 +35,7 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
-        int key = 5;
+        int key = 13;
         int index = binSearch(array, key);
         System.out.println(index);
     }

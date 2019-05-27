@@ -28,6 +28,7 @@ public class QuickSort {
         }
         int low = start;
         int high = end;
+        //基准
         int pivot = arr[low];
         while (low < high) {
             while (low < high && arr[high] >= pivot) {
@@ -41,6 +42,7 @@ public class QuickSort {
             // 将大于 pivot 的数放在高位
             arr[high] = arr[low];
         }
+        //重制基准
         arr[low] = pivot;
         // 递归排序左半部分
         quickSort(arr, start, low - 1);

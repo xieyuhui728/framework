@@ -51,7 +51,7 @@ public class TowSum {
         if (nums.length == 0) {
             return null;
         }
-        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>(100);
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
             if (map.containsKey(complement)) {
