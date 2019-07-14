@@ -1,4 +1,4 @@
-package com.xieyuhui.jdk.leetCode.simple;
+package com.xieyuhui.jdk.leetCode.array;
 
 import com.alibaba.fastjson.JSONObject;
 

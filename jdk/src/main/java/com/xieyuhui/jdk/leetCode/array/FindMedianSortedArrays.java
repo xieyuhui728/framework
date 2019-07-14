@@ -1,4 +1,4 @@
-package com.xieyuhui.jdk.leetCode.difficulty;
+package com.xieyuhui.jdk.leetCode.array;
 
 /**
  * @Auther: xieyuhui
